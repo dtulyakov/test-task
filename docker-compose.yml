@@ -1,0 +1,11 @@
+version: '2'
+services:
+  test-task:
+    build: .
+    image: dtulyakov/test-task
+    container_name: test-task
+    command: "/run.sh"
+    volumes:
+      - ./tmp/code:/code
+    environment:
+      - GIT = dtulyakov/test-task
