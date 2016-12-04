@@ -6,6 +6,6 @@ services:
     container_name: test-task
     command: "/run.sh"
     volumes:
-      - ./tmp/code:/code
+      - /tmp/code:/code
     environment:
       - GIT = dtulyakov/test-task
